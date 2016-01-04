@@ -1,0 +1,57 @@
+{
+	"id": "a7e502ca-9cfd-a37a-c59c-be0120cbcd80",
+	"name": "tvshows",
+	"description": "",
+	"order": [
+		"56058caf-64dc-a53c-8387-9b777b514d93",
+		"919847f9-2b0c-daf5-1f1d-88b3b7791199"
+	],
+	"folders": [],
+	"timestamp": 1451841985238,
+	"owner": "",
+	"remoteLink": "",
+	"public": false,
+	"requests": [
+		{
+			"id": "56058caf-64dc-a53c-8387-9b777b514d93",
+			"headers": "Content-Type: application/json\n",
+			"url": "localhost:3000/api/tvshows",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"collectionId": "a7e502ca-9cfd-a37a-c59c-be0120cbcd80",
+			"data": [],
+			"dataMode": "raw",
+			"name": "localhost:3000/api/tvshows",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1451841985238,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n  \"title\": \"LOST\",\n  \"year\": 2004,\n  \"country\": \"USA\",\n  \"poster\": \"http://ia.media-imdb.com/images/M/MV5BMjA3NzMyMzU1MV5BMl5BanBnXkFtZTcwNjc1ODUwMg@@._V1_SY317_CR17,0,214,317_.jpg\",\n  \"seasons\": 6,\n  \"genre\": \"Sci-Fi\",\n  \"summary\": \"The survivors of a plane crash are forced to live with each other on a remote island, a dangerous new world that poses unique threats of its own.\"\n}"
+		},
+		{
+			"id": "919847f9-2b0c-daf5-1f1d-88b3b7791199",
+			"headers": "",
+			"url": "localhost:3000/api/tvshows/",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"collectionId": "a7e502ca-9cfd-a37a-c59c-be0120cbcd80",
+			"data": [],
+			"dataMode": "params",
+			"name": "localhost:3000/api/tvshows/",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1451842004561,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}

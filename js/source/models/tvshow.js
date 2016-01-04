@@ -1,16 +1,20 @@
-var mongoose = require('mongoose'),  
-    Schema   = mongoose.Schema;
+'use strict';
 
-var tvshowSchema = new Schema({  
-  title:    { type: String },
-  year:     { type: Number },
-  country:  { type: String },
-  poster:   { type: String },
-  seasons:  { type: Number },
-  genre:    { type: String, enum:
-  ['Drama', 'Fantasy', 'Sci-Fi', 'Thriller', 'Comedy']
-        },
-  summary:  { type: String }
-});
+exports = module.exports = function(app, mongoose) {
 
-module.exports = mongoose.model('TVShow', tvshowSchema); 
+	var tvshowSchema = new mongoose.Schema({
+		title: 		{ type: String },
+		year: 		{ type: Number },
+		country: 	{ type: String },
+		poster:  	{ type: String },
+		seasons: 	{ type: Number },
+		genre: 		{
+			type: String,
+			enum: ['Drama', 'Fantasy', 'Sci-Fi', 'Thriller', 'Comedy']
+		},
+		summary: 	{ type: String }
+	});
+
+	mongoose.model('TVShow', tvshowSchema);
+
+};
